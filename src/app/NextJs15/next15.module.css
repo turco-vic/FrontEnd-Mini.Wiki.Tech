@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 370vh;
+    background-color: rgb(218, 218, 218);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.header {
+    background-color: rgb(126, 186, 255);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgb(50, 50, 50);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    width: 80%;
+    padding: 20px;
+}
+
