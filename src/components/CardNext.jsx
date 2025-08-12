@@ -1,10 +1,10 @@
-import styles from "./CardNext.module.css";
+import styles from "../styles/CardNext.module.css";
 
 export default function CardNext({ title, subtitle, subtitle2, subtitle3, subtitle4, subtitle5, subtitle6, subtitle7, subtitle8, subtitle9, subtitle10, text, text2, text3, text4, text5, text6, text7, text8, text9, text10 }) {
     return (
         <div className={styles.topics}>
             <h2>{title}</h2>
-            <div className={styles.line}></div>
+            {/* <div className={styles.line}></div> */}
             <p><b>{subtitle}</b> {text}</p>
             <br />
             <p><b>{subtitle2}</b> {text2}</p>
