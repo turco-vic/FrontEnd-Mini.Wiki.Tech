@@ -18,7 +18,7 @@ export default function Home() {
 
         <Button text="PÁGINA 1" href="/pag1" />
         <Button text="PÁGINA 2" href="/pag2" />
-        <Button text="PÁGINA 3" href="/pag3" />
+        <Button text="Next.js 15" href="/NextJs15" />
         <Button text="Arquivos Especiais" href="/Arquivos_especiais" />
       </div>
     </div>
