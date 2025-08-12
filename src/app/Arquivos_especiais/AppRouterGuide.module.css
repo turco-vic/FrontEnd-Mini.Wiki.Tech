@@ -1,0 +1,323 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  color:  #ffffff;
+  margin: 2.5rem 0 1.5rem 0;
+  font-weight: 500;
+}
+
+.main {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.content {
+  background: #f8fafc;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 120px;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+}
+
+.content:nth-child(4n) {
+  border-right: none;
+}
+
+.content:nth-child(n+9) {
+  border-bottom: none;
+}
+
+/* Cabeçalho */
+.content:nth-child(-n+4) {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Cantos arredondados do cabeçalho */
+.content:nth-child(1) {
+  border-top-left-radius: 15px;
+}
+
+.content:nth-child(4) {
+  border-top-right-radius: 15px;
+}
+
+/* Cantos arredondados da última linha */
+.content:nth-child(9) {
+  border-bottom-left-radius: 15px;
+}
+
+.content:nth-child(12) {
+  border-bottom-right-radius: 15px;
+}
+
+/* Linhas alternadas */
+.content:nth-child(n+5):nth-child(-n+8) {
+  background: #f8fafc;
+}
+
+.content:nth-child(n+9):nth-child(-n+12) {
+  background: #f1f5f9;
+}
+
+.content div {
+  line-height: 1.6;
+  color: #2d3748;
+  font-size: 0.95rem;
+  text-align: left;
+  width: 100%;
+}
+
+.content:nth-child(-n+4) div {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.content code {
+  background: #667eea;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.content strong {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+/* Estilos simples para tabela com divs */
+.tableSection {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tableRow:nth-child(even) {
+  background: #f8fafc;
+}
+
+.tableRow:nth-child(odd) {
+  background: #f1f5f9;
+}
+
+.cell {
+  padding: 1.5rem;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  line-height: 1.6;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.tableHeader .cell {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: none;
+}
+
+.tableRow:last-child .cell {
+  border-bottom: none;
+}
+
+.cell code {
+  background: #667eea;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cell strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Estilo para conteúdo de tópicos */
+.content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  color: #2d3748;
+  text-align: left;
+}
+
+.content p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.content strong {
+  color: #000000;
+  font-weight: 900;
+  background: #ffeb3b;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.content h3 {
+  color: #111827;
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.content li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #111827;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Estrutura de pastas visual */
+.fileLocation {
+  background: #000000;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 2px solid #333333;
+  text-align: left;
+}
+
+.folderStructure {
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.folderStructure strong {
+  color: #000000;
+  background: #ffeb3b;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+/* Bloco de código */
+.codeBlock {
+  background: #111827;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 2px solid #374151;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.codeBlock pre {
+  color: #f9fafb;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
+  white-space: pre;
+}
