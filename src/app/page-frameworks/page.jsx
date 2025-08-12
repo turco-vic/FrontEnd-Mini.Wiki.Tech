@@ -1,4 +1,5 @@
 import styles from './frameworks.module.css';
+import TipoBox from '../../components/TipoBox';
 
 export default function FrameworksPage() {
     return (
@@ -25,86 +26,103 @@ export default function FrameworksPage() {
             <section className={styles.typesSection}>
                 <h1 className={styles.tiposTitle}>TIPOS DE FRAMEWORKS</h1>
                 <div className={styles.tiposRow}>
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Full-featured Frameworks</h3>
-                        <p className={styles.tipoText}>
-                            Oferecem tudo pronto: roteamento, gerenciamento de estado, 
-                            integração com APIs, testes, etc.
-                        </p>
-                        <p className={styles.tipoEx}>
-                            Ex: Angular, Ember.js
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Full-featured Frameworks"
+                        conteudo="Oferecem tudo pronto: roteamento, gerenciamento de estado, integração com APIs, testes, etc. Ex: Angular, Ember.js"
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Component-based Frameworks</h3>
-                        <p className={styles.tipoText}>
-                            Foco na criação de interfaces a partir de componentes reutilizáveis.
-                        </p>
-                        <p className={styles.tipoEx}>
-                            Ex: Vue.js, Svelte
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Component-based Frameworks"
+                        conteudo="Foco na criação de interfaces a partir de componentes reutilizáveis. Ex: Vue.js, Svelte"
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>CSS Frameworks</h3>
-                        <p className={styles.tipoText}>
-                            Fornecem estilos, grades e componentes visuais pré-prontos.
-                        </p>
-                        <p className={styles.tipoEx}>
-                            Ex: Bootstrap, Tailwind CSS
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="CSS Frameworks"
+                        conteudo="Fornecem estilos, grades e componentes visuais pré-prontos. Ex: Bootstrap, Tailwind CSS"
+                    />
                 </div>
             </section>
             
             <section className={styles.examplesSection}>
                 <h1 className={styles.titleEx}>EXEMPLOS</h1>
                 <div className={styles.tiposRow}>
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Angular</h3>
-                        <p className={styles.tipoText}>
-                            Estrutura completa mantida pelo Google, usa TypeScript, ideal para grandes sistemas.
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Angular"
+                        conteudo="Estrutura completa mantida pelo Google, usa TypeScript, ideal para grandes sistemas."
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Vue.js</h3>
-                        <p className={styles.tipoText}>
-                            Fácil de aprender, sintaxe simples, muito usado em empresas que buscam agilidade.
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Vue.js"
+                        conteudo="Fácil de aprender, sintaxe simples, muito usado em empresas que buscam agilidade."
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Svelte</h3>
-                        <p className={styles.tipoText}>
-                            Gera código otimizado, sem virtual DOM, muito performático.
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Svelte"
+                        conteudo="Gera código otimizado, sem virtual DOM, muito performático."
+                    />
                 </div>
                 
                 <div className={styles.tiposRow}>
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Ember.js</h3>
-                        <p className={styles.tipoText}>
-                            Focado em produtividade com forte padrão de convenções.
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Ember.js"
+                        conteudo="Focado em produtividade com forte padrão de convenções."
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Bootstrap</h3>
-                        <p className={styles.tipoText}>
-                            Pacote pronto de estilos e componentes (CSS Framework).
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Bootstrap"
+                        conteudo="Pacote pronto de estilos e componentes (CSS Framework)."
+                    />
                     
-                    <div className={styles.tipoBox}>
-                        <h3 className={styles.tipoSubtitle}>Tailwind CSS</h3>
-                        <p className={styles.tipoText}>
-                            Utiliza classes utilitárias para criar designs rápidos e responsivos (CSS Framework).
-                        </p>
-                    </div>
+                    <TipoBox 
+                        titulo="Tailwind CSS"
+                        conteudo="Utiliza classes utilitárias para criar designs rápidos e responsivos (CSS Framework)."
+                    />
                 </div>
+
+                <section className={styles.Oportunidades}>
+                    <h1 className={styles.titleOportunity}>USO NO MERCADO E OPORTUNIDADES</h1>
+
+                    <div className={styles.tiposRow}>
+                        <TipoBox 
+                            titulo="Angular"
+                            conteudo="Muito usado em empresas grandes e projetos corporativos."
+                        />
+                        <TipoBox 
+                            titulo="Vue.js"
+                            conteudo="Popular em startups e equipes pequenas/médias."
+                        />
+                        <TipoBox 
+                            titulo="Svelte"
+                            conteudo="Ganhando espaço em aplicações que precisam ser rápidas e leves. "
+                        />
+                        <TipoBox 
+                            titulo="CSS Frameworks"
+                            conteudo="Usados em praticamente qualquer projeto web."
+                        />
+                    </div>
+                </section>
+
+                <section className={styles.areas}>
+                    <h1 className={styles.titleAreas}>ÁREAS DE ATUAÇÃO</h1>
+
+                    <div className={styles.tiposRow}>
+                        <TipoBox 
+                            conteudo="Desenvolvimento de sistemas web"
+                        />
+                        <TipoBox 
+                            conteudo="Painéis administrativos (dashboards) "
+                        />
+                        <TipoBox 
+                            conteudo="E-commerces e sites institucionais"
+                        />
+                        <TipoBox 
+                            conteudo="Aplicações SPA (Single Page Application) "
+                        />
+                        <TipoBox 
+                            conteudo="PWAs (Progressive Web Apps) "
+                        />
+                    </div>
+                </section>
             </section>
         </div>
     );
