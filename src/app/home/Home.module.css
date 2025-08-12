@@ -1,3 +1,27 @@
 .container {
-    background-color: aqua;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title {
+    color: #000000;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #000000;
+    font-size: 18px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
 }

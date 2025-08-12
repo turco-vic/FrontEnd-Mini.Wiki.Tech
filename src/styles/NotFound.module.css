@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #43b0f1 0%, #057dcd 100%);
     color: white;
     text-align: center;
     padding: 2rem;
@@ -15,11 +15,11 @@
     font-size: 10rem;
     font-weight: bold;
     margin: 0;
-    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    background: linear-gradient(45deg, #ffffff, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
     animation: bounce 2s infinite;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .homeButton {
-    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    background: linear-gradient(45deg, #5e87f5, #5e87f5);
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -56,7 +56,7 @@
 .homeButton:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #ff5252, #ffcc02);
+    background: linear-gradient(45deg, #5e87f5, #5e87f5);
 }
 
 .illustration {

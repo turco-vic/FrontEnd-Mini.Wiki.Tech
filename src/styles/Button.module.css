@@ -1,0 +1,22 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navButton {
+    background-color: #43b0f1;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 35rem;
+    height: 5rem;
+    margin: 1rem;
+
+    &:hover {
+        background-color: #005bb5;
+    }
+}

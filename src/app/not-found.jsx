@@ -6,7 +6,7 @@ export default function NotFound() {
         <div className={style.notFound}>
             <div className={style.errorCode}>404</div>
             
-            <div className={style.illustration}>🚀💫</div>
+            <div className={style.illustration}>😶‍🌫️😴</div>
             
             <h1 className={style.title}>Oops! Página Não Encontrada</h1>
             
@@ -16,7 +16,7 @@ export default function NotFound() {
             </p>
             
             <Link href="/home" className={style.homeButton}>
-                🏠 Voltar ao Início
+                🏠 Home
             </Link>
         </div>
     );
