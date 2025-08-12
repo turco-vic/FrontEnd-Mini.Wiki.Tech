@@ -7,13 +7,14 @@ export default function StylesPage() {
     return (
         <div className={styles.container}>
             <h1 className="font-roboto-bold">Bibliotecas de Estilo</h1>
-            <p>O Next.js, por ser um framework React, oferece grande flexibilidade na forma como você estiliza seus componentes. A escolha da biblioteca de estilos ideal depende de diversos fatores, como o tamanho do projeto, a complexidade do design e a preferência da equipe de desenvolvimento.</p>
+            <p className={styles.introduction}>Next.js se destaca por sua flexibilidade na estilização de aplicações, uma característica que permite aos desenvolvedores adaptar a ferramenta às suas necessidades. O framework não limita a uma única metodologia, mas oferece um espectro de opções, desde a integração nativa até o suporte a bibliotecas de estilo amplamente utilizadas. A decisão sobre qual abordagem seguir é geralmente guiada pela preferência do desenvolvedor e pelos requisitos do projeto.</p>
             <div className={styles.section}>
                 <h2>CSS Modules</h2>
                 <p>O Next.js oferece suporte nativo e otimizado para <span>CSS Modules</span>, o que o torna uma escolha extremamente popular. Essa abordagem resolve um dos maiores problemas do CSS tradicional: a globalidade dos seletores.</p>
                 <p><span>Como funciona:</span> Você cria um arquivo CSS com a extensão .module.css (ex: Button.module.css). Ao importar esse arquivo em seu componente, o Webpack (o bundler do Next.js) gera nomes de classes únicos para evitar conflitos.</p>
                 <span>Exemplo:</span>
-                <CodeBlock code={`// Button.module.css
+                <div className={styles.blockContainer}>
+                    <CodeBlock code={`// Button.module.css
 
     .button {
         background-color: blue;
@@ -21,7 +22,7 @@ export default function StylesPage() {
         padding: 10px 20px;
         border: none;
     }`} />
-                <CodeBlock code={`// Button.js
+                    <CodeBlock code={`// Button.js
 
     import styles from './Button.module.css';
 
@@ -32,6 +33,7 @@ export default function StylesPage() {
             </button>;
         );
     }`} />
+                </div>
                 <div className={styles.cardContainer}>
                     <CardStyle
                         title="Prós"
