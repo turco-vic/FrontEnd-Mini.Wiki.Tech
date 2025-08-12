@@ -29,3 +29,56 @@
     font-size: 16px;
     margin-top: 0.5rem;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        height: 6rem;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .linkHome {
+        font-size: 16px;
+    }
+    .description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: row;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .linkHome {
+        font-size: 15px;
+        padding: 0.5rem 0.8rem;
+    }
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 0.3rem;
+    }
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .linkHome {
+        font-size: 13px;
+        padding: 0.4rem 0.6rem;
+    }
+    .description {
+        font-size: 12px;
+        text-align: center;
+    }
+}

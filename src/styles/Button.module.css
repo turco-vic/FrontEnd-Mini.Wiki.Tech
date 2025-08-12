@@ -12,7 +12,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 35rem;
+    width: 45rem;
     height: 5rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
@@ -20,5 +20,30 @@
 
     &:hover {
         background-color: #27a0e6;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navButton {
+        width: 30rem;
+        height: 4rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .navButton {
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navButton {
+        width: 50vw;
+        height: 3rem;
+        font-size: 0.95rem;
+        padding: 0.5rem;
     }
 }

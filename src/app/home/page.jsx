@@ -16,7 +16,7 @@ export default function Home() {
 
         <Line />
 
-        <Button text="PÁGINA 1" href="/pag1" />
+        <Button text="Frameworks" href="/page-frameworks" />
         <Button text="PÁGINA 2" href="/pag2" />
         <Button text="Next.js 15" href="/NextJs15" />
         <Button text="Arquivos Especiais" href="/Arquivos_especiais" />
