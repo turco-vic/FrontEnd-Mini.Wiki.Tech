@@ -6,19 +6,22 @@
     padding: 2rem;
 }
 
-.navButton {
-    background-color: #0070f3;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 35rem;
-    height: 5rem;
-    margin: 2rem;
+.title {
+    color: #000000;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
 
-    &:hover {
-        background-color: #005bb5;
-    }
+.description {
+    color: #000000;
+    font-size: 18px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
 }
