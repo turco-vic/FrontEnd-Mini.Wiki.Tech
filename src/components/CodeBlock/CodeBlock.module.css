@@ -1,0 +1,21 @@
+.codeBlock {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.codeBlock pre {
+    margin: 0;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+.codeBlock code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
