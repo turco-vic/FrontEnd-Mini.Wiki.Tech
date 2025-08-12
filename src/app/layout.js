@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "Meu Projeto Next.js",
-    description: "Projeto para mostrar tudo que eu sei",
+    title: "Mini Wiki Tech",
+    description: "Um projeto para documentar tecnologias e conceitos de forma simples e acessível.",
     icons: {
         icon: "/icons/favicon.ico",
     },
