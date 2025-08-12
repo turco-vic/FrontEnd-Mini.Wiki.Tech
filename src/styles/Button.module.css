@@ -14,9 +14,11 @@
     transition: background-color 0.3s ease;
     width: 35rem;
     height: 5rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 
     &:hover {
-        background-color: #005bb5;
+        background-color: #27a0e6;
     }
 }
