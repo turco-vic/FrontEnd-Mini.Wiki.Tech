@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "../components/Header";
 
 export const metadata = {
     title: "Mini Wiki Tech",
@@ -11,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR">
+            <Header />
             <body>{children}</body>
         </html>
     );
