@@ -7,7 +7,7 @@ export default function CardStyle({ title, topics, backgroundColor, borderColor 
             className={styles.card}
             style={{
                 backgroundColor: backgroundColor || "#fff",
-                border: `2px solid ${borderColor || "#ccc"}`,
+                borderLeft: `4px solid ${borderColor || "#ccc"}`,
             }}
         >
             <h3 className={styles.title}>{title}</h3>
@@ -16,9 +16,9 @@ export default function CardStyle({ title, topics, backgroundColor, borderColor 
                     {topics.map((item, index) => {
                         const [boldText, normalText] = item.split(":");
                         return (
-                            <li key={index}>
+                            <p key={index}>
                                 <strong>{boldText}:</strong> {normalText}
-                            </li>
+                            </p>
                         );
                     })}
                 </ul>
