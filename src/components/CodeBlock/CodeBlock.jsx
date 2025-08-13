@@ -5,7 +5,7 @@ export default function CodeBlock({ code }) {
     return (
         <div className={styles.codeBlock}>
                     <pre>
-                        <code>
+                        <code className="font-roboto-mono">
                             {code}
                         </code>
                     </pre>

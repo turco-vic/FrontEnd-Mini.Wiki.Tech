@@ -4,16 +4,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1.5rem 4rem 1.5rem;
-    gap: 3rem;
-    background: linear-gradient(135deg, #eaeaea 60%, #c7eaff 100%);
+    padding: 5rem 1.5rem 4rem 1.5rem;
+    gap: 4rem;
+    background: linear-gradient(135deg, #ffffff 80%, #d5e1e9 100%);
 }
 
-.introduction {
+
+.text {
     text-align: justify;
     text-align-last: center;
     padding: 0 2rem;
-    font-size: 1.15rem;
     color: #333;
 }
 
@@ -24,15 +24,11 @@
     padding: 2.5rem 2rem;
     flex-direction: column;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 2.5rem;
     background: #fff;
     border-radius: 1rem;
     box-shadow: 0 4px 24px 0 #0002;
-    border: 1.5px solid #e0e0e0;
     transition: box-shadow 0.2s;
-}
-.section:hover {
-    box-shadow: 0 8px 32px 0 #0003;
 }
 
 .section span {
@@ -52,10 +48,11 @@
 
 .cardContainer {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: space-around;
+    gap: 1rem;
     margin-top: 1.5rem;
 }
 

@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    max-width: 25rem;
+    max-width: 30rem;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -41,9 +41,6 @@
     margin: 10px 0;
 }
 
-.card li {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #000000;
+.card p {
     text-align: justify;
 }
