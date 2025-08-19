@@ -1,68 +1,54 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    height: 400vh;
-    background-color: rgb(218, 218, 218);
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.logoArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30rem;
-}
-
-.logo {
-    width: 70px;
-    height: 70px;
-}
-.text {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: rgb(50, 50, 50);
-    text-align: justify;
-}
-
 .container {
-    flex: 1;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
+    padding: 5rem 1.5rem 4rem 1.5rem;
+    gap: 4rem;
+    background: 
+    linear-gradient(45deg, #ffffff, #6693f5b4),
+    radial-gradient(circle, #00eeff48, #00ff88);
+}
+
+.text {
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    text-align: justify;
+    width: 85%;
+}
+
+.cardsContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 30px;
-    width: 60%;
-    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.titleCard {
+    display: flex;
+    padding: 2rem;
+    background: #6693f5b4;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 .card {
+    width: 85%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h1 {
-    margin-bottom: 20px;
-    background-color: #43b0f1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: white;
+    align-items: center;
 }
