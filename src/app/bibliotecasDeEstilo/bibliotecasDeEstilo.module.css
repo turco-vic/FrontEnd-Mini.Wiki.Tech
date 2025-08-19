@@ -56,6 +56,45 @@
     margin-top: 1.5rem;
 }
 
+/* ===== Listas estilizadas ===== */
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.list li {
+    position: relative;
+    background: #f7fbff;
+    border: 1px solid #e5eef7;
+    border-radius: 12px;
+    padding: 0.9rem 1rem 0.9rem 2.4rem;
+    color: #1f2937; /* slate-800 */
+    line-height: 1.6;
+    box-shadow: 0 1px 6px rgba(2, 6, 23, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.list li::before {
+    content: "";
+    position: absolute;
+    left: 0.9rem;
+    top: 1.1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, #79b6f5, #1976d2);
+    box-shadow: 0 0 0 3px #eaf2fb;
+}
+
+.list li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+    border-color: #d5e7fb;
+}
+
 @media (max-width: 700px) {
     .container {
         padding: 1.2rem 0.2rem 2rem 0.2rem;
@@ -74,5 +113,12 @@
     }
     .cardContainer {
         gap: 1.2rem;
+    }
+    .list li {
+        padding: 0.8rem 0.8rem 0.8rem 2rem;
+    }
+    .list li::before {
+        left: 0.7rem;
+        top: 1rem;
     }
 }
